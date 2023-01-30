@@ -1,27 +1,12 @@
 {
-  "name": "cachito-npm-test",
-  "description": "need to test Cachito with npm dependencies",
+  "name": "cachito-npm-with-deps",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/akhmanova/cachito-npm-test.git"
-  },
-  "author": "Elina Akhmanova <eakhmano@redhat.com>",
-  "license": "GPL-3.0-or-later",
   "dependencies": {
-    "chai": "^4.2.0",
-    "fecha": "git+https://github.com/taylorhakes/fecha.git",
-    "npm-test-project": "git+https://gitlab.com/eakhmano-test-group/eakhmano-test-subgroup/subsubgroup/npm-test-project.git",
-    "subpackage": "file:./subpackage",
-    "test-npm-dep": "https://elinah@bitbucket.org/elinah/test-npm-dep.git"
+    "chai": "4.2.0",
+    "is-positive": "github:kevva/is-positive.git",
+    "fecha": "https://github.com/taylorhakes/fecha/archive/91680e4db1415fea33eac878cfd889c80a7b55c7.tar.gz"
   },
-  "devDependencies": {},
-  "files": [
-    "index.js"
-  ],
-  "main": "./index.js",
-  "keywords": [
-    "cachito",
-    "test"
-  ]
+  "devDependencies": {
+    "cachito-npm-without-deps": "git+https://github.com/cachito-testing/cachito-npm-without-deps.git"
+  }
 }
